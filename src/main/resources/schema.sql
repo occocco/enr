@@ -1,35 +1,33 @@
+SET FOREIGN_KEY_CHECKS = 0;
 
-CREATE TABLE regions (
+DROP TABLE IF EXISTS job_history;
+DROP TABLE IF EXISTS employees;
+DROP TABLE IF EXISTS departments;
+DROP TABLE IF EXISTS jobs;
+DROP TABLE IF EXISTS locations;
+DROP TABLE IF EXISTS countries;
+DROP TABLE IF EXISTS regions;
+DROP View IF EXISTS emp_details_view;
 
-                         region_id INT(11) UNSIGNED NOT NULL,
+SET FOREIGN_KEY_CHECKS = 1;
 
-                         region_name VARCHAR(25),
+CREATE TABLE departments (
 
-                         PRIMARY KEY (region_id)
+                             department_id INT (11) UNSIGNED NOT NULL,
+
+                             department_name VARCHAR(30) NOT NULL,
+
+                             manager_id INT(11) UNSIGNED,
+
+                             location_id INT(11) UNSIGNED,
+
+                             PRIMARY KEY (department_id)
 
 );
-
-
-
-CREATE TABLE countries (
-
-                           country_id CHAR(2) NOT NULL,
-
-                           country_name VARCHAR(40),
-
-                           region_id INT(11) UNSIGNED NOT NULL,
-
-                           PRIMARY KEY (country_id)
-
-);
-
-
-
-
 
 CREATE TABLE locations (
 
-                           location_id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+                           location_id INT (11) UNSIGNED NOT NULL AUTO_INCREMENT,
 
                            street_address VARCHAR(40),
 
@@ -45,23 +43,27 @@ CREATE TABLE locations (
 
 );
 
+CREATE TABLE countries (
 
+                           country_id CHAR(2) NOT NULL,
 
-CREATE TABLE departments (
+                           country_name VARCHAR(40),
 
-                             department_id INT(11) UNSIGNED NOT NULL,
+                           region_id INT (11) UNSIGNED NOT NULL,
 
-                             department_name VARCHAR(30) NOT NULL,
-
-                             manager_id INT(11) UNSIGNED,
-
-                             location_id INT(11) UNSIGNED,
-
-                             PRIMARY KEY (department_id)
+                           PRIMARY KEY (country_id)
 
 );
 
+CREATE TABLE regions (
 
+                         region_id INT (11) UNSIGNED NOT NULL,
+
+                         region_name VARCHAR(25),
+
+                         PRIMARY KEY (region_id)
+
+);
 
 CREATE TABLE jobs (
 
@@ -77,11 +79,9 @@ CREATE TABLE jobs (
 
 );
 
-
-
 CREATE TABLE employees (
 
-                           employee_id INT(11) UNSIGNED NOT NULL,
+                           employee_id INT (11) UNSIGNED NOT NULL,
 
                            first_name VARCHAR(20),
 
@@ -107,11 +107,9 @@ CREATE TABLE employees (
 
 );
 
-
-
 CREATE TABLE job_history (
 
-                             employee_id INT(11) UNSIGNED NOT NULL,
+                             employee_id INT (11) UNSIGNED NOT NULL,
 
                              start_date DATE NOT NULL,
 
@@ -122,8 +120,6 @@ CREATE TABLE job_history (
                              department_id INT(11) UNSIGNED NOT NULL
 
 );
-
-
 
 ALTER TABLE job_history ADD UNIQUE INDEX (
 

@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDate;
 
 import static javax.persistence.FetchType.*;
 import static lombok.AccessLevel.PROTECTED;
@@ -17,22 +17,23 @@ import static lombok.AccessLevel.PROTECTED;
 @Table(name = "job_history")
 public class JobHistory {
 
-    @Id
-    @Column(name = "employee_id")
-    private Integer id;
-
-    @Column(name = "start_date")
-    private Date startDate;
-
-    @Column(name = "end_date")
-    private Date endDate;
+    @EmbeddedId
+    private JobHistoryId id;
 
     @ManyToOne(fetch = LAZY)
-    @JoinColumn(name = "job_id")
+    @MapsId("employeeId")
+    @JoinColumn(name = "employee_id", insertable = false, updatable = false)
+    private Employee employee;
+
+    @Column(name = "end_date", columnDefinition = "date", nullable = false)
+    private LocalDate endDate;
+
+    @ManyToOne(fetch = LAZY)
+    @JoinColumn(name = "job_id", nullable = false)
     private Job job;
 
     @ManyToOne(fetch = LAZY)
-    @JoinColumn(name = "department_id")
+    @JoinColumn(name = "department_id", nullable = false)
     private Department department;
 
 }

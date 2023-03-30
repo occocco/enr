@@ -5,6 +5,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 import static javax.persistence.FetchType.LAZY;
@@ -21,7 +23,7 @@ public class Department {
     @Column(name = "department_id")
     private Integer id;
 
-    @Column(name = "department_name")
+    @Column(name = "department_name", length = 30, nullable = false)
     private String name;
 
     @ManyToOne(fetch = LAZY)
@@ -33,9 +35,5 @@ public class Department {
     private Location location;
 
     @OneToMany(mappedBy = "department")
-    private List<Employee> employees;
-
-    @OneToMany(mappedBy = "department")
-    private List<JobHistory> jobHistories;
-
+    private List<Employee> employees = new ArrayList<>();
 }

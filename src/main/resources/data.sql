@@ -1,22 +1,22 @@
-INSERT INTO regions
+INSERT INTO regions (region_id, region_name)
 VALUES (
            1,
            'Europe'
        );
 
-INSERT INTO regions
+INSERT INTO regions (region_id, region_name)
 VALUES (
            2,
            'Americas'
        );
 
-INSERT INTO regions
+INSERT INTO regions (region_id, region_name)
 VALUES (
            3,
            'Asia'
        );
 
-INSERT INTO regions
+INSERT INTO regions (region_id, region_name)
 VALUES (
            4,
            'Middle East and Africa'
@@ -24,175 +24,175 @@ VALUES (
 
 COMMIT;
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'IT',
            'Italy',
            1
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'JP',
            'Japan',
            3
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'US',
            'United States of America',
            2
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'CA',
            'Canada',
            2
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'CN',
            'China',
            3
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'IN',
            'India',
            3
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'AU',
            'Australia',
            3
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'ZW',
            'Zimbabwe',
            4
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'SG',
            'Singapore',
            3
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'UK',
            'United Kingdom',
            1
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'FR',
            'France',
            1
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'DE',
            'Germany',
            1
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'ZM',
            'Zambia',
            4
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'EG',
            'Egypt',
            4
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'BR',
            'Brazil',
            2
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'CH',
            'Switzerland',
            1
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'NL',
            'Netherlands',
            1
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'MX',
            'Mexico',
            2
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'KW',
            'Kuwait',
            4
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'IL',
            'Israel',
            4
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'DK',
            'Denmark',
            1
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'HK',
            'HongKong',
            3
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'NG',
            'Nigeria',
            4
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'AR',
            'Argentina',
            2
        );
 
-INSERT INTO countries
+INSERT INTO countries (country_id, country_name, region_id)
 VALUES (
            'BE',
            'Belgium',
@@ -201,7 +201,7 @@ VALUES (
 
 COMMIT;
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            1000,
            '1297 Via Cola di Rie',
@@ -211,7 +211,7 @@ VALUES (
            'IT'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            1100,
            '93091 Calle della Testa',
@@ -221,7 +221,7 @@ VALUES (
            'IT'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            1200,
            '2017 Shinjuku-ku',
@@ -231,7 +231,7 @@ VALUES (
            'JP'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            1300,
            '9450 Kamiya-cho',
@@ -241,7 +241,7 @@ VALUES (
            'JP'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            1400,
            '2014 Jabberwocky Rd',
@@ -251,7 +251,7 @@ VALUES (
            'US'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            1500,
            '2011 Interiors Blvd',
@@ -261,7 +261,7 @@ VALUES (
            'US'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            1600,
            '2007 Zagora St',
@@ -271,7 +271,7 @@ VALUES (
            'US'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            1700,
            '2004 Charade Rd',
@@ -281,7 +281,7 @@ VALUES (
            'US'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            1800,
            '147 Spadina Ave',
@@ -291,7 +291,7 @@ VALUES (
            'CA'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            1900,
            '6092 Boxwood St',
@@ -301,7 +301,7 @@ VALUES (
            'CA'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            2000,
            '40-5-12 Laogianggen',
@@ -311,7 +311,7 @@ VALUES (
            'CN'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            2100,
            '1298 Vileparle (E)',
@@ -321,7 +321,7 @@ VALUES (
            'IN'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            2200,
            '12-98 Victoria Street',
@@ -331,7 +331,7 @@ VALUES (
            'AU'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            2300,
            '198 Clementi North',
@@ -341,7 +341,7 @@ VALUES (
            'SG'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            2400,
            '8204 Arthur St',
@@ -351,7 +351,7 @@ VALUES (
            'UK'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            2500,
            'Magdalen Centre, The Oxford Science Park',
@@ -361,7 +361,7 @@ VALUES (
            'UK'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            2600,
            '9702 Chester Road',
@@ -371,7 +371,7 @@ VALUES (
            'UK'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            2700,
            'Schwanthalerstr. 7031',
@@ -381,7 +381,7 @@ VALUES (
            'DE'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            2800,
            'Rua Frei Caneca 1360 ',
@@ -391,7 +391,7 @@ VALUES (
            'BR'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            2900,
            '20 Rue des Corps-Saints',
@@ -401,7 +401,7 @@ VALUES (
            'CH'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            3000,
            'Murtenstrasse 921',
@@ -411,7 +411,7 @@ VALUES (
            'CH'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            3100,
            'Pieter Breughelstraat 837',
@@ -421,7 +421,7 @@ VALUES (
            'NL'
        );
 
-INSERT INTO locations
+INSERT INTO locations (location_id, street_address, postal_code, city, state_province, country_id)
 VALUES (
            3200,
            'Mariano Escobedo 9991',
@@ -435,7 +435,7 @@ COMMIT;
 
 SET FOREIGN_KEY_CHECKS = 0;
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            10,
            'Administration',
@@ -443,7 +443,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            20,
            'Marketing',
@@ -451,7 +451,7 @@ VALUES (
            1800
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            30,
            'Purchasing',
@@ -459,7 +459,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            40,
            'Human Resources',
@@ -467,7 +467,7 @@ VALUES (
            2400
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            50,
            'Shipping',
@@ -475,7 +475,7 @@ VALUES (
            1500
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            60,
            'IT',
@@ -483,7 +483,7 @@ VALUES (
            1400
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            70,
            'Public Relations',
@@ -491,7 +491,7 @@ VALUES (
            2700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            80,
            'Sales',
@@ -499,7 +499,7 @@ VALUES (
            2500
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            90,
            'Executive',
@@ -507,7 +507,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            100,
            'Finance',
@@ -515,7 +515,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            110,
            'Accounting',
@@ -523,7 +523,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            120,
            'Treasury',
@@ -531,7 +531,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            130,
            'Corporate Tax',
@@ -539,7 +539,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            140,
            'Control And Credit',
@@ -547,7 +547,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            150,
            'Shareholder Services',
@@ -555,7 +555,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            160,
            'Benefits',
@@ -563,7 +563,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            170,
            'Manufacturing',
@@ -571,7 +571,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            180,
            'Construction',
@@ -579,7 +579,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            190,
            'Contracting',
@@ -587,7 +587,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            200,
            'Operations',
@@ -595,7 +595,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            210,
            'IT Support',
@@ -603,7 +603,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            220,
            'NOC',
@@ -611,7 +611,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            230,
            'IT Helpdesk',
@@ -619,7 +619,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            240,
            'Government Sales',
@@ -627,7 +627,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            250,
            'Retail Sales',
@@ -635,7 +635,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            260,
            'Recruiting',
@@ -643,7 +643,7 @@ VALUES (
            1700
        );
 
-INSERT INTO departments
+INSERT INTO departments (department_id, department_name, manager_id, location_id)
 VALUES (
            270,
            'Payroll',
@@ -655,7 +655,7 @@ SET FOREIGN_KEY_CHECKS = 1;
 
 COMMIT;
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'AD_PRES',
            'President',
@@ -663,7 +663,7 @@ VALUES (
            40000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'AD_VP',
            'Administration Vice President',
@@ -671,7 +671,7 @@ VALUES (
            30000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'AD_ASST',
            'Administration Assistant',
@@ -679,7 +679,7 @@ VALUES (
            6000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'FI_MGR',
            'Finance Manager',
@@ -687,7 +687,7 @@ VALUES (
            16000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'FI_ACCOUNT',
            'Accountant',
@@ -695,7 +695,7 @@ VALUES (
            9000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'AC_MGR',
            'Accounting Manager',
@@ -703,7 +703,7 @@ VALUES (
            16000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'AC_ACCOUNT',
            'Public Accountant',
@@ -711,7 +711,7 @@ VALUES (
            9000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'SA_MAN',
            'Sales Manager',
@@ -719,7 +719,7 @@ VALUES (
            20000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'SA_REP',
            'Sales Representative',
@@ -727,7 +727,7 @@ VALUES (
            12000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'PU_MAN',
            'Purchasing Manager',
@@ -735,7 +735,7 @@ VALUES (
            15000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'PU_CLERK',
            'Purchasing Clerk',
@@ -743,7 +743,7 @@ VALUES (
            5500
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'ST_MAN',
            'Stock Manager',
@@ -751,7 +751,7 @@ VALUES (
            8500
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'ST_CLERK',
            'Stock Clerk',
@@ -759,7 +759,7 @@ VALUES (
            5000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'SH_CLERK',
            'Shipping Clerk',
@@ -767,7 +767,7 @@ VALUES (
            5500
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'IT_PROG',
            'Programmer',
@@ -775,7 +775,7 @@ VALUES (
            10000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'MK_MAN',
            'Marketing Manager',
@@ -783,7 +783,7 @@ VALUES (
            15000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'MK_REP',
            'Marketing Representative',
@@ -791,7 +791,7 @@ VALUES (
            9000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'HR_REP',
            'Human Resources Representative',
@@ -799,7 +799,7 @@ VALUES (
            9000
        );
 
-INSERT INTO jobs
+INSERT INTO jobs (job_id, job_title, min_salary, max_salary)
 VALUES (
            'PR_REP',
            'Public Relations Representative',
@@ -809,7 +809,7 @@ VALUES (
 
 COMMIT;
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            100,
            'Steven',
@@ -824,7 +824,7 @@ VALUES (
            90
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            101,
            'Neena',
@@ -839,7 +839,7 @@ VALUES (
            90
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            102,
            'Lex',
@@ -854,7 +854,7 @@ VALUES (
            90
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            103,
            'Alexander',
@@ -869,7 +869,7 @@ VALUES (
            60
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            104,
            'Bruce',
@@ -884,7 +884,7 @@ VALUES (
            60
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            105,
            'David',
@@ -899,7 +899,7 @@ VALUES (
            60
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            106,
            'Valli',
@@ -914,7 +914,7 @@ VALUES (
            60
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            107,
            'Diana',
@@ -929,7 +929,7 @@ VALUES (
            60
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            108,
            'Nancy',
@@ -944,7 +944,7 @@ VALUES (
            100
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            109,
            'Daniel',
@@ -959,7 +959,7 @@ VALUES (
            100
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            110,
            'John',
@@ -974,7 +974,7 @@ VALUES (
            100
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            111,
            'Ismael',
@@ -989,7 +989,7 @@ VALUES (
            100
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            112,
            'Jose Manuel',
@@ -1004,7 +1004,7 @@ VALUES (
            100
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            113,
            'Luis',
@@ -1019,7 +1019,7 @@ VALUES (
            100
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            114,
            'Den',
@@ -1034,7 +1034,7 @@ VALUES (
            30
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            115,
            'Alexander',
@@ -1049,7 +1049,7 @@ VALUES (
            30
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            116,
            'Shelli',
@@ -1064,7 +1064,7 @@ VALUES (
            30
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            117,
            'Sigal',
@@ -1079,7 +1079,7 @@ VALUES (
            30
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            118,
            'Guy',
@@ -1094,7 +1094,7 @@ VALUES (
            30
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            119,
            'Karen',
@@ -1109,7 +1109,7 @@ VALUES (
            30
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            120,
            'Matthew',
@@ -1124,7 +1124,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            121,
            'Adam',
@@ -1139,7 +1139,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            122,
            'Payam',
@@ -1154,7 +1154,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            123,
            'Shanta',
@@ -1169,7 +1169,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            124,
            'Kevin',
@@ -1184,7 +1184,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            125,
            'Julia',
@@ -1199,7 +1199,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            126,
            'Irene',
@@ -1214,7 +1214,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            127,
            'James',
@@ -1229,7 +1229,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            128,
            'Steven',
@@ -1244,7 +1244,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            129,
            'Laura',
@@ -1259,7 +1259,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            130,
            'Mozhe',
@@ -1274,7 +1274,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            131,
            'James',
@@ -1289,7 +1289,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            132,
            'TJ',
@@ -1304,7 +1304,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            133,
            'Jason',
@@ -1319,7 +1319,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            134,
            'Michael',
@@ -1334,7 +1334,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            135,
            'Ki',
@@ -1349,7 +1349,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            136,
            'Hazel',
@@ -1364,7 +1364,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            137,
            'Renske',
@@ -1379,7 +1379,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            138,
            'Stephen',
@@ -1394,7 +1394,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            139,
            'John',
@@ -1409,7 +1409,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            140,
            'Joshua',
@@ -1424,7 +1424,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            141,
            'Trenna',
@@ -1439,7 +1439,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            142,
            'Curtis',
@@ -1454,7 +1454,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            143,
            'Randall',
@@ -1469,7 +1469,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            144,
            'Peter',
@@ -1484,7 +1484,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            145,
            'John',
@@ -1499,7 +1499,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            146,
            'Karen',
@@ -1514,7 +1514,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            147,
            'Alberto',
@@ -1529,7 +1529,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            148,
            'Gerald',
@@ -1544,7 +1544,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            149,
            'Eleni',
@@ -1559,7 +1559,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            150,
            'Peter',
@@ -1574,7 +1574,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            151,
            'David',
@@ -1589,7 +1589,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            152,
            'Peter',
@@ -1604,7 +1604,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            153,
            'Christopher',
@@ -1619,7 +1619,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            154,
            'Nanette',
@@ -1634,7 +1634,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            155,
            'Oliver',
@@ -1649,7 +1649,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            156,
            'Janette',
@@ -1664,7 +1664,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            157,
            'Patrick',
@@ -1679,7 +1679,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            158,
            'Allan',
@@ -1694,7 +1694,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            159,
            'Lindsey',
@@ -1709,7 +1709,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            160,
            'Louise',
@@ -1724,7 +1724,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            161,
            'Sarath',
@@ -1739,7 +1739,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            162,
            'Clara',
@@ -1754,7 +1754,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            163,
            'Danielle',
@@ -1769,7 +1769,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            164,
            'Mattea',
@@ -1784,7 +1784,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            165,
            'David',
@@ -1799,7 +1799,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            166,
            'Sundar',
@@ -1814,7 +1814,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            167,
            'Amit',
@@ -1829,7 +1829,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            168,
            'Lisa',
@@ -1844,7 +1844,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            169,
            'Harrison',
@@ -1859,7 +1859,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            170,
            'Tayler',
@@ -1874,7 +1874,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            171,
            'William',
@@ -1889,7 +1889,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            172,
            'Elizabeth',
@@ -1904,7 +1904,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            173,
            'Sundita',
@@ -1919,7 +1919,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            174,
            'Ellen',
@@ -1934,7 +1934,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            175,
            'Alyssa',
@@ -1949,7 +1949,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            176,
            'Jonathon',
@@ -1964,7 +1964,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            177,
            'Jack',
@@ -1979,7 +1979,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            178,
            'Kimberely',
@@ -1994,7 +1994,7 @@ VALUES (
            NULL
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            179,
            'Charles',
@@ -2009,7 +2009,7 @@ VALUES (
            80
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            180,
            'Winston',
@@ -2024,7 +2024,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            181,
            'Jean',
@@ -2039,7 +2039,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            182,
            'Martha',
@@ -2054,7 +2054,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            183,
            'Girard',
@@ -2069,7 +2069,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            184,
            'Nandita',
@@ -2084,7 +2084,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            185,
            'Alexis',
@@ -2099,7 +2099,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            186,
            'Julia',
@@ -2114,7 +2114,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            187,
            'Anthony',
@@ -2129,7 +2129,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            188,
            'Kelly',
@@ -2144,7 +2144,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            189,
            'Jennifer',
@@ -2159,7 +2159,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            190,
            'Timothy',
@@ -2174,7 +2174,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            191,
            'Randall',
@@ -2189,7 +2189,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            192,
            'Sarah',
@@ -2204,7 +2204,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            193,
            'Britney',
@@ -2219,7 +2219,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            194,
            'Samuel',
@@ -2234,7 +2234,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            195,
            'Vance',
@@ -2249,7 +2249,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            196,
            'Alana',
@@ -2264,7 +2264,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            197,
            'Kevin',
@@ -2279,7 +2279,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            198,
            'Donald',
@@ -2294,7 +2294,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            199,
            'Douglas',
@@ -2309,7 +2309,7 @@ VALUES (
            50
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            200,
            'Jennifer',
@@ -2324,7 +2324,7 @@ VALUES (
            10
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            201,
            'Michael',
@@ -2339,7 +2339,7 @@ VALUES (
            20
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            202,
            'Pat',
@@ -2354,7 +2354,7 @@ VALUES (
            20
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            203,
            'Susan',
@@ -2369,7 +2369,7 @@ VALUES (
            40
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            204,
            'Hermann',
@@ -2384,7 +2384,7 @@ VALUES (
            70
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            205,
            'Shelley',
@@ -2399,7 +2399,7 @@ VALUES (
            110
        );
 
-INSERT INTO employees
+INSERT INTO employees (employee_id, first_name, last_name, email, phone_number, hire_date, job_id, salary, commission_pct, manager_id, department_id)
 VALUES (
            206,
            'William',
@@ -2416,7 +2416,7 @@ VALUES (
 
 COMMIT;
 
-INSERT INTO job_history
+INSERT INTO job_history (employee_id, start_date, end_date, job_id, department_id)
 VALUES (
            102,
            STR_TO_DATE('13-Jan-1993', '%d-%M-%Y'),
@@ -2425,7 +2425,7 @@ VALUES (
            60
        );
 
-INSERT INTO job_history
+INSERT INTO job_history (employee_id, start_date, end_date, job_id, department_id)
 VALUES (
            101,
            STR_TO_DATE('21-Sep-1989', '%d-%M-%Y'),
@@ -2434,7 +2434,7 @@ VALUES (
            110
        );
 
-INSERT INTO job_history
+INSERT INTO job_history (employee_id, start_date, end_date, job_id, department_id)
 VALUES (
            101,
            STR_TO_DATE('28-Oct-1993','%d-%M-%Y'),
@@ -2443,7 +2443,7 @@ VALUES (
            110
        );
 
-INSERT INTO job_history
+INSERT INTO job_history (employee_id, start_date, end_date, job_id, department_id)
 VALUES (
            201,
            STR_TO_DATE('27-Feb-1996','%d-%M-%Y'),
@@ -2452,7 +2452,7 @@ VALUES (
            20
        );
 
-INSERT INTO job_history
+INSERT INTO job_history (employee_id, start_date, end_date, job_id, department_id)
 VALUES (
            114,
            STR_TO_DATE('24-Mar-1998','%d-%M-%Y'),
@@ -2461,7 +2461,7 @@ VALUES (
            50
        );
 
-INSERT INTO job_history
+INSERT INTO job_history (employee_id, start_date, end_date, job_id, department_id)
 VALUES (
            122,
            STR_TO_DATE('01-Jan-1999','%d-%M-%Y'),
@@ -2470,7 +2470,7 @@ VALUES (
            50
        );
 
-INSERT INTO job_history
+INSERT INTO job_history (employee_id, start_date, end_date, job_id, department_id)
 VALUES (
            200,
            STR_TO_DATE('17-Sep-1987','%d-%M-%Y'),
@@ -2479,7 +2479,7 @@ VALUES (
            90
        );
 
-INSERT INTO job_history
+INSERT INTO job_history (employee_id, start_date, end_date, job_id, department_id)
 VALUES (
            176,
            STR_TO_DATE('24-Mar-1998','%d-%M-%Y'),
@@ -2488,7 +2488,7 @@ VALUES (
            80
        );
 
-INSERT INTO job_history
+INSERT INTO job_history (employee_id, start_date, end_date, job_id, department_id)
 VALUES (
            176,
            STR_TO_DATE('01-Jan-1999','%d-%M-%Y'),
@@ -2497,7 +2497,7 @@ VALUES (
            80
        );
 
-INSERT INTO job_history
+INSERT INTO job_history (employee_id, start_date, end_date, job_id, department_id)
 VALUES (
            200,
            STR_TO_DATE('01-Jul-1994','%d-%M-%Y'),

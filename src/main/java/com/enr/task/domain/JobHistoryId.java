@@ -12,15 +12,12 @@ import java.time.LocalDate;
 import static lombok.AccessLevel.*;
 
 @Getter
-@Embeddable
 @AllArgsConstructor
 @NoArgsConstructor(access = PROTECTED)
 public class JobHistoryId implements Serializable {
 
-    @Column(name = "employee_id")
-    private Integer employeeId;
+    private Employee employee;
 
-    @Column(name = "start_date", columnDefinition = "date", nullable = false)
     private LocalDate startDate;
 
 }

@@ -31,7 +31,7 @@ public class Job {
     @Column(name = "max_salary", columnDefinition = "decimal(8)")
     private BigDecimal maxSalary;
 
-    @OneToMany(mappedBy = "job")
+    @OneToMany(mappedBy = "job", cascade = CascadeType.ALL)
     private List<Employee> employees = new ArrayList<>();
 
 }

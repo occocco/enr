@@ -36,4 +36,9 @@ public class Department {
 
     @OneToMany(mappedBy = "department")
     private List<Employee> employees = new ArrayList<>();
+
+    // 회원과의 연관관계를 끊기 위한 메서드
+    public void disconnectManager() {
+        this.manager = null;
+    }
 }

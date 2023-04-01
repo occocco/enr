@@ -3,13 +3,16 @@ package com.enr.task.domain;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
+import static javax.persistence.CascadeType.*;
 import static javax.persistence.FetchType.LAZY;
 import static lombok.AccessLevel.PROTECTED;
 
@@ -17,6 +20,7 @@ import static lombok.AccessLevel.PROTECTED;
 @Getter
 @NoArgsConstructor(access = PROTECTED)
 @AllArgsConstructor
+@ToString(exclude = {"subordinates", "jobHistories"})
 @Table(name = "employees")
 public class Employee {
 
@@ -58,9 +62,32 @@ public class Employee {
     private Department department;
 
     @OneToMany(mappedBy = "manager")
-    private List<Employee> subordinates;
+    private List<Employee> subordinates = new ArrayList<>();
 
-    @OneToMany(mappedBy = "employee")
+    @OneToMany(mappedBy = "employee", cascade = ALL)
     private List<JobHistory> jobHistories = new ArrayList<>();
+
+    // 사원과 부서의 연관관계를 끊는 메서드
+
+    public void disconnectDepartment() {
+        if (department != null) {
+            if (department.getManager() != null) {
+                department.disconnectManager();
+            }
+        }
+    }
+
+    // Employee에 Jobhistory를 추가하는 메서드.
+    public void addJobHistory(JobHistory... jobHistories) {
+        Collections.addAll(this.jobHistories, jobHistories);
+    }
+
+    public void removeJobHistory() {
+        jobHistories.clear();
+    }
+
+    public String getEmployeeFullName() {
+        return firstName + " " + lastName;
+    }
 
 }

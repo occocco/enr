@@ -14,16 +14,18 @@ import static lombok.AccessLevel.PROTECTED;
 @Getter
 @NoArgsConstructor(access = PROTECTED)
 @AllArgsConstructor
+@IdClass(JobHistoryId.class)
 @Table(name = "job_history")
 public class JobHistory {
 
-    @EmbeddedId
-    private JobHistoryId id;
-
+    @Id
     @ManyToOne(fetch = LAZY)
-    @MapsId("employeeId")
-    @JoinColumn(name = "employee_id", insertable = false, updatable = false)
+    @JoinColumn(name = "employee_id")
     private Employee employee;
+
+    @Id
+    @Column(name = "start_date", columnDefinition = "date", nullable = false)
+    private LocalDate startDate;
 
     @Column(name = "end_date", columnDefinition = "date", nullable = false)
     private LocalDate endDate;
@@ -36,5 +38,8 @@ public class JobHistory {
     @JoinColumn(name = "department_id", nullable = false)
     private Department department;
 
+    public void disconnectEmployee() {
+        this.employee = null;
+    }
 }
 

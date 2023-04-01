@@ -43,4 +43,11 @@ public class Location {
     @OneToMany(mappedBy = "location")
     private List<Department> departments = new ArrayList<>();
 
+    public String getFullAddress() {
+        return country.getName() + ", " +
+                stateProvince + ", " +
+                city + ", " +
+                postalCode + ", " +
+                streetAddress;
+    }
 }

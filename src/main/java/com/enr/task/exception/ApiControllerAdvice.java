@@ -18,5 +18,11 @@ public class ApiControllerAdvice {
         ExResult exResult = new ExResult("404", e.getMessage());
         return ResponseEntity.status(HttpStatus.NOT_FOUND).body(exResult);
     }
+    @ExceptionHandler(IllegalArgumentException.class)
+    public ResponseEntity<ExResult> illegalArgumentException(IllegalArgumentException e) {
+        log.error("[IllegalArgumentException]", e);
+        ExResult exResult = new ExResult("400", e.getMessage());
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exResult);
+    }
 
 }

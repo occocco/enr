@@ -67,8 +67,15 @@ public class Employee {
     @OneToMany(mappedBy = "employee", cascade = ALL)
     private List<JobHistory> jobHistories = new ArrayList<>();
 
-    // 사원과 부서의 연관관계를 끊는 메서드
+    // 급여 인상 메서드
+    public void increaseSalary(BigDecimal increaseRate) {
+        if (increaseRate.compareTo(BigDecimal.ONE) < 0) {
+            throw new IllegalArgumentException("인상 값은 1 이상이어야 합니다.");
+        }
+        this.salary = salary.multiply(increaseRate);
+    }
 
+    // 사원과 부서의 연관관계를 끊는 메서드
     public void disconnectDepartment() {
         if (department != null) {
             if (department.getManager() != null) {
@@ -84,6 +91,10 @@ public class Employee {
 
     public void removeJobHistory() {
         jobHistories.clear();
+    }
+
+    public void connectDepartment(Department department) {
+        this.department = department;
     }
 
     public String getEmployeeFullName() {

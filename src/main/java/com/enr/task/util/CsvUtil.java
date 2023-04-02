@@ -1,5 +1,6 @@
 package com.enr.task.util;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
@@ -10,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+@Slf4j
 @Component
 public class CsvUtil {
 
@@ -23,11 +25,12 @@ public class CsvUtil {
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] data = line.split(",");
-                LocationGrid locationGrid = new LocationGrid(data[0], data[1], data[2], Integer.parseInt(data[3]), Integer.parseInt(data[4]));
+                LocationGrid locationGrid = new LocationGrid(data[2], data[1], data[0], new int[]{Integer.parseInt(data[3]), Integer.parseInt(data[4])});
                 LOCATION_GRIDS.add(locationGrid);
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            log.error("EX!!", e);
+            throw new RuntimeException(e.getMessage(), e);
         }
     }
 

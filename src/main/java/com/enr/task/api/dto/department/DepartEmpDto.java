@@ -1,6 +1,5 @@
-package com.enr.task.api.department.dto;
+package com.enr.task.api.dto.department;
 
-import com.enr.task.domain.Department;
 import com.enr.task.domain.Employee;
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,13 +1,15 @@
-package com.enr.task.api.employee.dto;
+package com.enr.task.api.dto.jobhistory;
 
 import com.enr.task.domain.JobHistory;
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 
-@Data
+@Getter
 @AllArgsConstructor
+@NoArgsConstructor
 public class JobHistoryDto {
 
     private String employeeName;

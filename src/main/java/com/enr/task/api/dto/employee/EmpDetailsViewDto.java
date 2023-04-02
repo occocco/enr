@@ -1,4 +1,4 @@
-package com.enr.task.api.employee.dto;
+package com.enr.task.api.dto.employee;
 
 import com.enr.task.domain.view.EmpDetailsView;
 import lombok.AllArgsConstructor;

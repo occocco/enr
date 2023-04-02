@@ -6,6 +6,9 @@ import org.hibernate.annotations.Immutable;
 import javax.persistence.*;
 import java.math.BigDecimal;
 
+/**
+ * View와 매핑 되는 엔티티
+ */
 @Entity
 @Getter
 @Immutable

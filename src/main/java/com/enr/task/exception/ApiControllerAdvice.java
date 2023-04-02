@@ -24,5 +24,11 @@ public class ApiControllerAdvice {
         ExResult exResult = new ExResult("400", e.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(exResult);
     }
+    @ExceptionHandler(NullPointerException.class)
+    public ResponseEntity<ExResult> nullPointerException(NullPointerException e) {
+        log.error("[NullPointerException]", e);
+        ExResult exResult = new ExResult("500", e.getMessage());
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(exResult);
+    }
 
 }

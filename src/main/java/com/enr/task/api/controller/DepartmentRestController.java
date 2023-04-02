@@ -1,8 +1,8 @@
-package com.enr.task.api.department;
+package com.enr.task.api.controller;
 
-import com.enr.task.api.department.dto.DepartEmpDto;
-import com.enr.task.api.department.dto.DepartmentDto;
-import com.enr.task.api.department.dto.SalaryIncreaseRequest;
+import com.enr.task.api.dto.department.DepartEmpDto;
+import com.enr.task.api.dto.department.DepartmentDto;
+import com.enr.task.api.dto.department.IncreaseSalaryRequest;
 import com.enr.task.domain.Department;
 import com.enr.task.domain.Employee;
 import com.enr.task.service.department.DepartmentService;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-import static com.enr.task.api.department.dto.DepartmentDto.fromEntity;
+import static com.enr.task.api.dto.department.DepartmentDto.fromEntity;
 import static com.enr.task.util.EntityUtils.convertEntityListToDtoList;
 
 @Slf4j
@@ -51,7 +51,7 @@ public class DepartmentRestController {
      */
     @PatchMapping("/api/departments/{department_id}/employees/salary-increase")
     public ResponseEntity<List<DepartEmpDto>> increaseSalaryOfEmployeesByRate(@PathVariable("department_id") Integer id,
-                                                                              @RequestBody SalaryIncreaseRequest request) {
+                                                                              @RequestBody IncreaseSalaryRequest request) {
         List<Employee> employees = departmentService.increaseSalaryOfDepartment(id, request.getIncreaseRate());
         List<DepartEmpDto> employeeDtos = convertEntityListToDtoList(employees, DepartEmpDto::fromEntity);
         return ResponseEntity.ok().body(employeeDtos);

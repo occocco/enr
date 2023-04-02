@@ -6,6 +6,9 @@ import java.util.Optional;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/**
+ * 제네릭을 통한 공통 처리 클래스
+ */
 public class EntityUtils {
 
     public static void assertListNotEmpty(List<?> list, String errorMessage) {

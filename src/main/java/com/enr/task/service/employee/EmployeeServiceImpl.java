@@ -1,5 +1,6 @@
 package com.enr.task.service.employee;
 
+import com.enr.task.api.dto.employee.EmployeeUpdateDto;
 import com.enr.task.domain.Employee;
 import com.enr.task.domain.JobHistory;
 import com.enr.task.domain.view.EmpDetailsView;
@@ -25,13 +26,13 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public List<Employee> findAllEmployee() {
-        List<Employee> employees = employeeRepository.findAll();
+        List<Employee> employees = employeeRepository.findAllEmployeeDetails();
         assertListNotEmpty(employees, "사원 정보가 존재하지 않습니다.");
         return employees;
     }
 
     @Override
-    public List<EmpDetailsView> findAllEmployeeDetails() {
+    public List<EmpDetailsView> findAllEmployeeUsedView() {
         List<EmpDetailsView> employeeDetails = empDetailsViewRepository.findAll();
         assertListNotEmpty(employeeDetails, "사원 정보가 존재하지 않습니다.");
         return employeeDetails;
@@ -39,12 +40,12 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     @Override
     public Employee findEmployeeById(Integer id) {
-        Optional<Employee> employeeOpt = employeeRepository.findById(id);
+        Optional<Employee> employeeOpt = employeeRepository.findEmployeeDetailsById(id);
         return getEntityFromOpt(employeeOpt, "사원을 찾을 수 없습니다.");
     }
 
     @Override
-    public EmpDetailsView findEmployeeDetailsById(Integer id) {
+    public EmpDetailsView findEmployeeUsedView(Integer id) {
         Optional<EmpDetailsView> empDetailsViewOpt = empDetailsViewRepository.findById(id);
         return getEntityFromOpt(empDetailsViewOpt, "사원을 찾을 수 없습니다.");
     }
@@ -58,5 +59,12 @@ public class EmployeeServiceImpl implements EmployeeService {
         return jobHistories;
     }
 
+    @Override
+    @Transactional
+    public Employee updateEmployee(Integer id, EmployeeUpdateDto requestDto) {
+        Employee employee = findEmployeeById(id);
+        employee.updateEmployee(requestDto);
+        return employee;
+    }
 
 }

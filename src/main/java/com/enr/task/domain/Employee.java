@@ -1,9 +1,10 @@
 package com.enr.task.domain;
 
+import com.enr.task.api.dto.employee.EmployeeUpdateDto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import lombok.ToString;
+import org.springframework.util.StringUtils;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -20,7 +21,6 @@ import static lombok.AccessLevel.PROTECTED;
 @Getter
 @NoArgsConstructor(access = PROTECTED)
 @AllArgsConstructor
-@ToString(exclude = {"subordinates", "jobHistories"})
 @Table(name = "employees")
 public class Employee {
 
@@ -96,6 +96,35 @@ public class Employee {
     public void connectDepartment(Department department) {
         this.department = department;
     }
+
+    public void updateEmployee(EmployeeUpdateDto requestDto) {
+        validateEmployeeUpdateDto(requestDto.getSalary(),
+                requestDto.getCommissionPct(),
+                requestDto.getLastName(),
+                requestDto.getEmail());
+        this.firstName = requestDto.getFirstName();
+        this.lastName = requestDto.getLastName();
+        this.email = requestDto.getEmail();
+        this.phoneNumber = requestDto.getPhoneNumber();
+        this.salary = requestDto.getSalary();
+        this.commissionPct = requestDto.getCommissionPct();
+    }
+
+    private void validateEmployeeUpdateDto(BigDecimal salary, BigDecimal commissionPct, String lastName, String email) {
+        if (salary == null || salary.compareTo(BigDecimal.ZERO) < 0) {
+            throw new IllegalArgumentException("급여는 음수일 수 없습니다.");
+        }
+        if (commissionPct == null || commissionPct.compareTo(BigDecimal.ZERO) < 0 || commissionPct.compareTo(BigDecimal.ONE) > 0) {
+            throw new IllegalArgumentException("커미션 비율은 0 이상 1 이하여야 합니다.");
+        }
+        if (!StringUtils.hasText(lastName)) {
+            throw new IllegalArgumentException("이름은 필수입니다.");
+        }
+        if (!StringUtils.hasText(email)) {
+            throw new IllegalArgumentException("이메일은 필수입니다.");
+        }
+    }
+
 
     public String getEmployeeFullName() {
         return firstName + " " + lastName;

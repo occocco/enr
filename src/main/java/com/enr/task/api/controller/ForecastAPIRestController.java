@@ -49,7 +49,6 @@ public class ForecastAPIRestController {
         HttpEntity<String> entity = new HttpEntity<>(headers);
 
         URI uri = getUri(location);
-
         ResponseEntity<String> response = restTemplate.exchange(uri, HttpMethod.GET, entity, String.class);
 
         // api 응답 body JOSN 파싱.
@@ -71,7 +70,7 @@ public class ForecastAPIRestController {
 
     private URI getUri(String location) {
         int[] xy = getCoordinateByLocation(location);
-        String base_time = getHour();
+        String base_time = getBaseTime();
         String base_date = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyyMMdd"));
         return UriComponentsBuilder.fromUriString("https://apis.data.go.kr")
                 .path("/1360000/VilageFcstInfoService_2.0/getVilageFcst")
@@ -110,7 +109,7 @@ public class ForecastAPIRestController {
      * 예보 시간이 0200 0500 0800 1100 1400 1700 2000 2300. 이 외 시간으로 요청 시 오류.
      * 현재 시각에서 가까운 위의 시각을 구하는 메서드.
      */
-    private String getHour() {
+    private String getBaseTime() {
 
         LocalDateTime now = LocalDateTime.now();
         LocalTime[] times = {
@@ -124,7 +123,7 @@ public class ForecastAPIRestController {
         return Arrays.stream(times)
                 .filter(time -> time.isBefore(closestTime))
                 .max(Comparator.naturalOrder())
-                .orElse(null)
+                .orElse(LocalTime.of(2, 0))
                 .format(DateTimeFormatter.ofPattern("HHmm"));
     }
 }
